@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.version = "0.4.10"
 
   s.authors = ["Jonas Nicklas"]
-  s.date = Date.today
+  s.date = Time.now
   s.description = "Upload files in your Ruby applications, map them to a range of ORMs, store them on different backends."
   s.summary = "Ruby file upload library"
   s.email = ["jonas.nicklas@gmail.com"]

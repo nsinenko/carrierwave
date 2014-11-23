@@ -28,6 +28,14 @@ module CarrierWave
         add_config :cache_dir
         add_config :enable_processing
 
+        # fog
+        add_config :fog_attributes
+        add_config :fog_credentials
+        add_config :fog_directory
+        add_config :fog_host
+        add_config :fog_public
+        add_config :fog_authenticated_url_expiration
+
         # Mounting
         add_config :ignore_integrity_errors
         add_config :ignore_processing_errors
@@ -40,6 +48,7 @@ module CarrierWave
           config.storage_engines = {
             :file => "CarrierWave::Storage::File",
             :s3 => "CarrierWave::Storage::S3",
+            :fog => "CarrierWave::Storage::Fog",
             :grid_fs => "CarrierWave::Storage::GridFS",
             :right_s3 => "CarrierWave::Storage::RightS3",
             :cloud_files => "CarrierWave::Storage::CloudFiles"
@@ -54,6 +63,10 @@ module CarrierWave
           config.grid_fs_port = 27017
           config.store_dir = 'uploads'
           config.cache_dir = 'uploads/tmp'
+          config.fog_attributes = {}
+          config.fog_credentials = {}
+          config.fog_public = true
+          config.fog_authenticated_url_expiration = 600
           config.ignore_integrity_errors = true
           config.ignore_processing_errors = true
           config.validate_integrity = true
