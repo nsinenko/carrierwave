@@ -4,8 +4,7 @@ GEM
     RubyInline (3.8.6)
       ZenTest (~> 4.3)
     ZenTest (4.4.0)
-    activerecord (2.3.9)
-      activesupport (= 2.3.9)
+    activerecord (3.2.14)
     activesupport (2.3.9)
     addressable (2.2.1)
     aws (2.3.21)
@@ -79,7 +78,7 @@ PLATFORMS
 
 DEPENDENCIES
   RubyInline
-  activerecord (~> 2.3.9)
+  activerecord (~> 3.2.14)
   activesupport (~> 2.3.9)
   aws
   aws-s3

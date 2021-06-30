@@ -3,7 +3,7 @@ source :rubygems
 gem "activesupport", "~> 2.3.9", :require => 'active_support'
 
 group :development do
-  gem "activerecord", "~> 2.3.9"
+  gem "activerecord", "~> 3.2.14"
   gem "rspec", :require => ['spec', 'spec/autorun']
   gem "aws"
   gem "cucumber"
