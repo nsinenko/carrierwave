@@ -1,9 +1,9 @@
 source :rubygems
 
-gem "activesupport", "~> 2.3.9", :require => 'active_support'
+gem "activesupport", "~> 7.0.4", :require => 'active_support'
 
 group :development do
-  gem "activerecord", "~> 2.3.9"
+  gem "activerecord", "~> 7.0.4"
   gem "rspec", :require => ['spec', 'spec/autorun']
   gem "aws"
   gem "cucumber"
@@ -17,7 +17,7 @@ group :development do
   gem "RubyInline"
   gem "image_science"
   gem "mini_magick"
-  gem "mongoid", "~> 1.9.1"
+  gem "mongoid", "~> 8.0.3"
   gem "bson_ext"
   gem "aws-s3"
   gem "timecop"
